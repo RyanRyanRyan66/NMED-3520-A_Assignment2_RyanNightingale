@@ -8,21 +8,65 @@
 h2 {
 text-align: center;
 font-size: 70px;
-color: #1f1f1f;
+color: #ffffff;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-top: 100px;
+
+}
+
+.why {
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+
+.heroSection {
+  background-image: linear-gradient(#7a78fa, #688CFA, rgb(228, 90, 228), #fa6259, #7a78fa);
 
 
 }
 
+.information {
+  padding: 20px;
+  margin-top: 20px;
+margin-left: 80px;
+}
+.titles {
 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between the text and the image */
+}
+.paragraph-and-image {
+  display: flex;
+  align-items: flex-start;  /* Align items to the top (important for vertical alignment) */
+  gap: 300px; /* Space between the text and image */
+  
+}
+.just-paragraph {
+width: 50%;
 
-
+}
+ 
+.just-image {
+  width: 500px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+margin-right: 100px;
+}
 
 h3 {
     font-size: 40px;
-    padding-left: 20px;
+   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #1f1f1f;
+    color: #ffffff;
+}
+
+p {
+font-size: 25px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+
 }
 
 #logo img {
@@ -36,7 +80,27 @@ h3 {
     transform: scale(1.1); /* Slight hover effect */
   }
 
+#hero {
+display: flex;
+justify-content: center;
+margin-top: -200px;
 
+
+}
+
+.mapSection {
+  background-image: linear-gradient(#7a78fa,  #000000, #000000,  #000000,  #000000,  #000000,  #000000,  #000000,  #000000,  #000000, #7a78fa);
+ 
+margin-top: 50px;
+
+}
+
+#mapHero {
+  justify-content: center;
+  display: flex;
+padding-top: 100px;
+padding-bottom: 100px;
+}
 
 
 
@@ -53,7 +117,7 @@ header{
 
 
 body {
-background-color: #688CFA;
+background-color: #7a78fa;
 margin: 0px;
 
 
@@ -92,7 +156,27 @@ nav ul {
     text-decoration: underline;
 
   }
+  .image-gallery {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 100px; /* Adds space between the images */
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
 
+.image-item {
+  width: 500px;  /* Image width */
+  height: 500px; /* Image height */
+    object-fit: cover;  /* Ensures the images fill the space without stretching */
+    border-radius: 5px;  /* Optional: rounded corners for images */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect to change the image (use background-image or src change in JS) */
+.image-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    opacity: 0.8;  /* Fade effect on hover */
+}
 
   footer{
     text-align: center;
@@ -100,6 +184,6 @@ nav ul {
     color: #ffffff;
     background-color: #333;
     line-height: 80px;
-  
+  margin-bottom: -25px;
 
-  }
+  } 
