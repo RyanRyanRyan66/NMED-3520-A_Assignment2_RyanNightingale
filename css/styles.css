@@ -9,7 +9,7 @@ h2 {
 text-align: center;
 font-size: 70px;
 color: #ffffff;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Franklin Gothic Medium', Arial, 'Arial Narrow', sans-serif;
 margin-top: 100px;
 
 }
@@ -17,30 +17,35 @@ margin-top: 100px;
 .why {
   padding-left: 165px;
   padding-right: 165px;
+  background-color: #b33249;
 }
 
 
 .heroSection {
-  background-image: linear-gradient(#7a78fa, #688CFA, rgb(228, 90, 228), #fa6259, #7a78fa);
+  background-image: linear-gradient(#bcd7fd,#c1bcfd, #fedb65, #f6ae5a, #db5b74, #b33249);
 
-
+  padding-top: 90px;
 }
+
+
 
 .information {
   padding: 20px;
   margin-top: 20px;
 margin-left: 80px;
+
 }
 .titles {
 
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Adds space between the text and the image */
+  gap: 20px; 
+
 }
 .paragraph-and-image {
   display: flex;
-  align-items: flex-start;  /* Align items to the top (important for vertical alignment) */
-  gap: 300px; /* Space between the text and image */
+  align-items: flex-start;  
+  gap: 300px; 
   
 }
 .just-paragraph {
@@ -49,35 +54,55 @@ width: 50%;
 }
  
 .just-image {
-  width: 500px; /* Set the width of the image */
-  height: auto; /* Maintain aspect ratio */
+  width: 500px; 
+  height: auto; 
 margin-right: 100px;
 }
 
 h3 {
     font-size: 40px;
    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Arial, 'Arial Narrow', sans-serif;
     color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+    margin-right: 1000px;
 }
 
 p {
 font-size: 25px;
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Arial, 'Arial Narrow', sans-serif;
     color: #ffffff;
 
 }
 
 #logo img {
-    width: 250px;  /* Adjust logo size */
+    width: 250px;  
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
   }
   
+#citations {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  margin-right: 20px;
+}
+
+#citations img{
+  width: 100px;  
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+}
+#citations img:hover {
+  transform: scale(1.1); 
+}
+
   #logo img:hover {
-    transform: scale(1.1); /* Slight hover effect */
+    transform: scale(1.1); 
   }
 
 #hero {
@@ -89,9 +114,9 @@ margin-top: -200px;
 }
 
 .mapSection {
-  background-image: linear-gradient(#7a78fa,  #000000, #000000,  #000000,  #000000,  #000000,  #000000,  #000000,  #000000,  #000000, #7a78fa);
+  background-image: linear-gradient(  #fc2a4f,  #f95f93, #c152b0,  #5d23ad,#473aa9 );
  
-margin-top: 50px;
+padding-top: 0px;
 
 }
 
@@ -106,8 +131,8 @@ padding-bottom: 100px;
 
 header{
     display: flex;
-    align-items: center;  /* Vertically align items */
-    justify-content: space-between;  /* Spread logo and navigation to opposite sides */
+    align-items: center;  
+    justify-content: space-between;  
     padding: 10px 20px;
     background-color: #333;
 
@@ -115,12 +140,16 @@ header{
 
 
 
-
 body {
-background-color: #7a78fa;
+background-color: #b33249;
 margin: 0px;
 
 
+}
+
+.standardBody {
+
+  background-color: #473aa9;
 }
 
 
@@ -133,10 +162,10 @@ nav ul {
   }
   
   nav ul li {
-    margin-left: 70px; /* Spacing between nav items */
+    margin-left: 70px; 
   }
   
-  /* review*/ nav ul li:first-child {
+ nav ul li:first-child {
     margin-left: 20px;
   }
   
@@ -146,10 +175,11 @@ nav ul {
     font-size: 45px;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-family: 'Franklin Gothic Medium', Arial, 'Arial Narrow', sans-serif;
   }
   
   nav ul li a:hover {
-    color: #00aaff;  /* Color on hover */
+    color: #b33249;  
   }
 
   nav ul li a.active {
@@ -158,32 +188,168 @@ nav ul {
   }
   .image-gallery {
     display: flex;
-    justify-content: center; /* Center the images horizontally */
-    gap: 100px; /* Adds space between the images */
+    justify-content: center; 
+    gap: 100px; 
     margin-top: 100px;
     margin-bottom: 40px;
+    background-color: #b33249;
 }
 
 .image-item {
-  width: 500px;  /* Image width */
-  height: 500px; /* Image height */
-    object-fit: cover;  /* Ensures the images fill the space without stretching */
-    border-radius: 5px;  /* Optional: rounded corners for images */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effect */
+  width: 500px;  
+  height: 500px; 
+    object-fit: cover;  
+    border-radius: 5px;  
+    transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
-/* Hover effect to change the image (use background-image or src change in JS) */
+
 .image-item:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    opacity: 0.8;  /* Fade effect on hover */
+    transform: scale(1.05); 
+    opacity: 0.8;  
 }
 
+
+.citations{
+margin-left: 20px ;
+
+
+}
   footer{
-    text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+   font-family: 'Franklin Gothic Medium', Arial, 'Arial Narrow', sans-serif;
     color: #ffffff;
     background-color: #333;
     line-height: 80px;
   margin-bottom: -25px;
+  justify-content: space-between;
+padding-left: 20px;
 
   } 
+
+  @media (max-width: 1500px) {
+    
+    
+    header {
+       
+        align-items: center
+        
+    }
+
+    nav ul {
+      display: block;
+      text-align: right;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+   
+    .heroSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+  
+    .heroSection #hero img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-top: 20px;  
+    }
+
+ 
+    #mapHero img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+   
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px 0;
+        padding-top: 20px;
+        padding-bottom: 150px;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+
+    p {
+        font-size: 16px;
+        text-align: left;
+        margin: 0 15px;
+      
+        line-height: 1.5;
+    }
+
+   
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .image-item {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .paragraph-and-image {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .just-paragraph {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+
+    .just-image {
+        width: 80%;
+        max-width: 500px;
+        margin-right: 0;
+    }
+
+ 
+    .footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+
+    h2 {
+        font-size: 40px;
+    }
+
+  
+    .why, .information {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .why p {
+        margin-bottom: 20px;
+    }
+}
